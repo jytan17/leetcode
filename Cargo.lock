@@ -7,6 +7,10 @@ name = "p0001_two_sum"
 version = "0.0.0"
 
 [[package]]
+name = "p0014_longest_common_prefix"
+version = "0.0.0"
+
+[[package]]
 name = "p0217_contains_duplicate"
 version = "0.0.0"
 
