@@ -43,22 +43,25 @@ Folder name: zero-padded 4-digit problem number + snake_case title (`p0146_lru_c
 ## Workflow
 
 1. Give the agent a problem (URL, title, or pasted statement) and target language(s).
-2. Agent runs `just new <slug> <lang>` and fills:
+2. Agent runs `just new problems/<slug>/<lang>` and fills:
    - `README.md` — statement, constraints, examples, complexity target
    - `solution.py` / `src/lib.rs` — exact LeetCode signature, body left empty
    - tests — every LeetCode example + edge cases
-3. You implement. Iterate with `just test <slug> <lang>` until green.
+3. You implement. Iterate with `just test problems/<slug>/<lang>` until green.
 4. Copy `solution.py` / `lib.rs` body back into LeetCode and submit.
 
 ## Commands
 
 ```
-just                            # list recipes
-just new <slug> <lang>          # scaffold (lang = python | rust)
-just test <slug> <lang>         # run tests for one problem
-just test-python <slug>
-just test-rust <slug>
-just list                       # list scaffolded problems
+just                                       # list recipes
+just new  problems/<slug>/<lang>           # scaffold (lang = python | rust)
+just test problems/<slug>/<lang>           # run tests for one problem
+just test-python <slug>                    # direct
+just test-rust <slug>                      # direct
+just list                                  # list scaffolded problems
+
+# Tab-completion friendly — trailing slash OK:
+just test problems/p0001_two_sum/python/
 ```
 
 Direct equivalents:

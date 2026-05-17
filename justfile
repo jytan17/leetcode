@@ -1,8 +1,18 @@
 default:
     @just --list
 
-test problem lang:
-    @just test-{{lang}} {{problem}}
+# Usage:
+#   just test problems/p0001_two_sum/python
+#   just test problems/p0001_two_sum/rust
+# Trailing slash from tab-completion is fine.
+test path:
+    #!/usr/bin/env bash
+    set -euo pipefail
+    p="{{path}}"
+    p="${p%/}"
+    lang="${p##*/}"
+    slug="$(basename "${p%/*}")"
+    just "test-${lang}" "${slug}"
 
 test-python problem:
     uv run pytest problems/{{problem}}/python -v
@@ -10,8 +20,17 @@ test-python problem:
 test-rust problem:
     cargo test -p {{problem}}
 
-new problem lang:
-    @just new-{{lang}} {{problem}}
+# Usage:
+#   just new problems/p0001_two_sum/python
+#   just new problems/p0001_two_sum/rust
+new path:
+    #!/usr/bin/env bash
+    set -euo pipefail
+    p="{{path}}"
+    p="${p%/}"
+    lang="${p##*/}"
+    slug="$(basename "${p%/*}")"
+    just "new-${lang}" "${slug}"
 
 new-python problem:
     mkdir -p problems/{{problem}}/python

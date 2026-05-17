@@ -27,20 +27,21 @@ Folder name: zero-padded 4-digit problem number + snake_case title. Examples: `p
 ## Workflow
 
 1. User gives problem (URL, title, or paste of problem text) + target language(s).
-2. Run `just new <problem_slug> <lang>` to scaffold from template. If user wants both langs, run twice.
+2. Run `just new problems/<slug>/<lang>` to scaffold from template. If user wants both langs, run twice.
 3. Fill in `README.md`: problem statement, constraints, examples, time/space complexity target, approach hints if asked.
 4. Fill in `solution.py` / `src/lib.rs`:
    - Exact LeetCode method signature (same name, same types).
-   - Body left as `pass` / `unimplemented!()` — user writes it. Do NOT solve unless asked.
+   - Body left as `raise NotImplementedError` / `unimplemented!()` — user writes it. Do NOT solve unless asked.
 5. Fill in tests with **all LeetCode examples** plus 2–3 edge cases (empty input, single element, max bound, duplicates, negative — whichever apply).
-6. Tell user the test command: `just test <problem_slug> <lang>`.
+6. Tell user the test command: `just test problems/<slug>/<lang>`.
 
 ## Commands
 
-- `just new <problem> <lang>` — scaffold
-- `just test <problem> <lang>` — run tests
-- `just test-python <problem>` / `just test-rust <problem>` — direct
-- `lang` is `python` or `rust`
+- `just new problems/<slug>/<lang>` — scaffold (lang = `python` | `rust`)
+- `just test problems/<slug>/<lang>` — run tests
+- Trailing slash from tab-completion is fine: `just test problems/p0001_two_sum/python/`
+- Direct: `just test-python <slug>` / `just test-rust <slug>`
+- Python env managed by `uv`. Test recipe runs `uv run pytest ...`. Add deps with `uv add --dev <pkg>`.
 
 ## Conventions
 
