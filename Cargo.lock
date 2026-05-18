@@ -15,6 +15,10 @@ name = "p0027_remove_element"
 version = "0.0.0"
 
 [[package]]
+name = "p0169_majority_element"
+version = "0.0.0"
+
+[[package]]
 name = "p0217_contains_duplicate"
 version = "0.0.0"
 
