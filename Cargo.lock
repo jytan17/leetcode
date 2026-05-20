@@ -39,5 +39,9 @@ name = "p0344_reverse_string"
 version = "0.0.0"
 
 [[package]]
+name = "p1768_merge_strings_alternately"
+version = "0.0.0"
+
+[[package]]
 name = "p1929_concatenation_of_array"
 version = "0.0.0"
