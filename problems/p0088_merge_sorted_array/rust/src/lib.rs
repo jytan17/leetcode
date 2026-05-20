@@ -6,15 +6,12 @@ impl Solution {
         let mut j = n - 1;
         let mut k = m + n - 1;
 
-        while 0 <= k && 0 <= j {
-            let n1 = if 0 <= i { nums1[i as usize] } else { i32::MIN };
-            let n2 = if 0 <= j { nums2[j as usize] } else { i32::MIN };
-
-            if n1 < n2 {
-                nums1[k as usize] = n2;
+        while j >= 0 {
+            if i < 0 || nums1[i as usize] <= nums2[j as usize] {
+                nums1[k as usize] = nums2[j as usize];
                 j -= 1;
             } else {
-                nums1[k as usize] = n1;
+                nums1[k as usize] = nums1[i as usize];
                 i -= 1;
             }
             k -= 1;
