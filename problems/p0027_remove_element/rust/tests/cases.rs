@@ -44,3 +44,8 @@ fn single_no_match() {
 fn single_match() {
     check(vec![3], 3, 0, &[]);
 }
+
+#[test]
+fn match_at_end() {
+    check(vec![1, 2, 3], 2, 2, &[1, 3]);
+}
