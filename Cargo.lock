@@ -23,6 +23,10 @@ name = "p0088_merge_sorted_array"
 version = "0.0.0"
 
 [[package]]
+name = "p0125_valid_palindrome"
+version = "0.0.0"
+
+[[package]]
 name = "p0169_majority_element"
 version = "0.0.0"
 
@@ -36,6 +40,10 @@ version = "0.0.0"
 
 [[package]]
 name = "p0344_reverse_string"
+version = "0.0.0"
+
+[[package]]
+name = "p0680_valid_palindrome_ii"
 version = "0.0.0"
 
 [[package]]
