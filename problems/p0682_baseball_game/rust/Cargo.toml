@@ -1,0 +1,7 @@
+[package]
+name = "p0682_baseball_game"
+version = "0.0.0"
+edition = "2021"
+
+[lib]
+path = "src/lib.rs"

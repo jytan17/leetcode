@@ -51,6 +51,10 @@ name = "p0680_valid_palindrome_ii"
 version = "0.0.0"
 
 [[package]]
+name = "p0682_baseball_game"
+version = "0.0.0"
+
+[[package]]
 name = "p1768_merge_strings_alternately"
 version = "0.0.0"
 
