@@ -47,11 +47,19 @@ name = "p0344_reverse_string"
 version = "0.0.0"
 
 [[package]]
+name = "p0412_fizz_buzz"
+version = "0.0.0"
+
+[[package]]
 name = "p0680_valid_palindrome_ii"
 version = "0.0.0"
 
 [[package]]
 name = "p0682_baseball_game"
+version = "0.0.0"
+
+[[package]]
+name = "p1480_running_sum_of_1d_array"
 version = "0.0.0"
 
 [[package]]
