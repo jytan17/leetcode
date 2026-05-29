@@ -59,6 +59,10 @@ name = "p0682_baseball_game"
 version = "0.0.0"
 
 [[package]]
+name = "p1313_decompress_run_length_encoded_list"
+version = "0.0.0"
+
+[[package]]
 name = "p1480_running_sum_of_1d_array"
 version = "0.0.0"
 
