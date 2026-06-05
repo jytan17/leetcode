@@ -27,6 +27,10 @@ name = "p0088_merge_sorted_array"
 version = "0.0.0"
 
 [[package]]
+name = "p0121_best_time_to_buy_and_sell_stock"
+version = "0.0.0"
+
+[[package]]
 name = "p0125_valid_palindrome"
 version = "0.0.0"
 
