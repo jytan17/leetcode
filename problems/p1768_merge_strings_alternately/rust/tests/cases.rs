@@ -1,36 +1,35 @@
 use p1768_merge_strings_alternately::Solution;
 
-fn check(w1: &str, w2: &str, expected: &str) {
-    let got = Solution::merge_alternately(w1.to_string(), w2.to_string());
-    assert_eq!(got, expected);
+fn run(w1: &str, w2: &str) -> String {
+    Solution::merge_alternately(w1.to_string(), w2.to_string())
 }
 
 #[test]
-fn example_1() {
-    check("abc", "pqr", "apbqcr");
+fn example_1_equal_length() {
+    assert_eq!(run("abc", "pqr"), "apbqcr");
 }
 
 #[test]
-fn example_2() {
-    check("ab", "pqrs", "apbqrs");
+fn example_2_word2_longer() {
+    assert_eq!(run("ab", "pqrs"), "apbqrs");
 }
 
 #[test]
-fn example_3() {
-    check("abcd", "pq", "apbqcd");
+fn example_3_word1_longer() {
+    assert_eq!(run("abcd", "pq"), "apbqcd");
 }
 
 #[test]
-fn single_char_each() {
-    check("a", "b", "ab");
+fn single_chars() {
+    assert_eq!(run("a", "b"), "ab");
 }
 
 #[test]
-fn one_much_longer() {
-    check("a", "bcdef", "abcdef");
+fn word1_much_longer() {
+    assert_eq!(run("abcde", "x"), "axbcde");
 }
 
 #[test]
-fn other_much_longer() {
-    check("abcdef", "g", "agbcdef");
+fn word2_much_longer() {
+    assert_eq!(run("x", "abcde"), "xabcde");
 }
