@@ -2,14 +2,12 @@ pub struct Solution;
 
 impl Solution {
     pub fn max_profit(prices: Vec<i32>) -> i32 {
-        let mut ans = 0;
-        let mut min_price = prices[0];
+        let mut ans = 0i32;
+        let mut min_p = prices[0];
 
-        for p in &prices[1..] {
-            if p - min_price > ans {
-                ans = p - min_price;
-            }
-            min_price = min_price.min(*p);
+        for &p in prices.iter().skip(1) {
+            ans = ans.max(p - min_p);
+            min_p = min_p.min(p);
         }
 
         ans
