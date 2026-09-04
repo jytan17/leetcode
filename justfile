@@ -47,3 +47,27 @@ new-rust problem:
 
 list:
     @ls problems/ 2>/dev/null || echo "no problems yet"
+
+# NeetCode 150 track (python only).
+# Usage:
+#   just nc 01_arrays_hashing/p0001_two_sum
+nc problem:
+    #!/usr/bin/env bash
+    set -euo pipefail
+    p="{{problem}}"
+    p="${p%/}"
+    uv run pytest "neetcode/${p}" -v
+
+nc-all:
+    uv run pytest neetcode -q
+
+nc-list:
+    @ls neetcode/
+
+# Interactive picker + per-problem shell (test / open leetcode / edit / mark done).
+# Usage:
+#   just drill
+#   just drill 128
+#   just drill two sum
+drill *query:
+    @uv run python nc.py {{query}}

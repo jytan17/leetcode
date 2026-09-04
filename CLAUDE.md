@@ -35,6 +35,29 @@ Folder name: zero-padded 4-digit problem number + snake_case title. Examples: `p
 5. Fill in tests with **all LeetCode examples** plus 2–3 edge cases (empty input, single element, max bound, duplicates, negative — whichever apply).
 6. Tell user the test command: `just test problems/<slug>/<lang>`.
 
+## NeetCode 150 track
+
+`neetcode/` holds the full NeetCode 150, python only, grouped by pattern:
+
+```
+neetcode/
+  README.md                          # index: all 150, grouped, with leetcode links + checkboxes
+  <NN>_<category>/                   # e.g. 01_arrays_hashing
+    p<NNNN>_<snake_name>/
+      README.md                      # link, difficulty, category, complexity target
+      solution.py                    # exact leetcode signature, body raise NotImplementedError
+      test_p<NNNN>_<snake_name>.py   # examples + edge cases
+```
+
+No `python/` subdir here (python only) and test files carry the problem name so the whole
+tree can be collected at once. Commands: `just nc <category>/<problem>`, `just nc-all`,
+`just nc-list`. Same rule applies: don't fill in solution bodies unless asked.
+
+`just drill [query]` (or `./nc.py`) is the interactive driver: search or browse by category,
+then a per-problem shell — `t` test, `o` open the leetcode page, `e` edit solution.py,
+`r` readme, `d` mark done, `n` next unsolved, `c` change problem, `s` stats, `q` quit.
+Progress lives in the `- [ ]` / `- [x]` checkboxes in `neetcode/README.md`.
+
 ## Commands
 
 - `just new problems/<slug>/<lang>` — scaffold (lang = `python` | `rust`)

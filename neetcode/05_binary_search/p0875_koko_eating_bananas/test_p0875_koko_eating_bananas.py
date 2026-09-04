@@ -1,0 +1,12 @@
+import pytest
+from solution import Solution
+
+
+@pytest.mark.parametrize("args,expected", [
+    (([3, 6, 7, 11], 8), 4),
+    (([30, 11, 23, 4, 20], 5), 30),
+    (([30, 11, 23, 4, 20], 6), 23),
+    (([1], 1), 1),
+])
+def test_min_eating_speed(args, expected):
+    assert Solution().minEatingSpeed(*args) == expected
