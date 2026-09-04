@@ -7,6 +7,7 @@ from solution import Solution
     (([3, 2, 4], 6), [1, 2]),
     (([3, 3], 6), [0, 1]),
     (([-3, 4, 3, 90], 0), [0, 2]),
+    (([1, 5, 3, 7], 8), [1, 2]),
 ])
 def test_two_sum(args, expected):
-    assert Solution().twoSum(*args) == expected
+    assert sorted(Solution().twoSum(*args)) == sorted(expected)
