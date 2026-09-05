@@ -6,17 +6,25 @@
 
 ## Statement
 
-<paste problem statement>
+Given an unsorted array of integers `nums`, return the length of the longest consecutive elements sequence.
+
+You must write an algorithm that runs in O(n) time.
+
+### Examples
+
+- `nums = [100,4,200,1,3,2]` → `4` (sequence: [1,2,3,4])
+- `nums = [0,3,7,2,5,8,4,6,0,1]` → `9`
 
 ## Constraints
 
-- ...
+- 0 <= nums.length <= 10^5
+- -10^9 <= nums[i] <= 10^9
 
 ## Target
 
-- Time: O(?)
-- Space: O(?)
+- Time: O(n)
+- Space: O(n)
 
 ## Notes
 
-<approach hints, gotchas>
+Put all nums in set. For each num where `num - 1` not in set (start of sequence), count consecutive. Track max length.
