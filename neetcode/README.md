@@ -9,7 +9,7 @@ Run all: `just nc-all`
 
 - [ ] [217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) — Easy — `01_arrays_hashing/p0217_contains_duplicate`
 - [ ] [242. Valid Anagram](https://leetcode.com/problems/valid-anagram/) — Easy — `01_arrays_hashing/p0242_valid_anagram`
-- [ ] [1. Two Sum](https://leetcode.com/problems/two-sum/) — Easy — `01_arrays_hashing/p0001_two_sum`
+- [x] [1. Two Sum](https://leetcode.com/problems/two-sum/) — Easy — `01_arrays_hashing/p0001_two_sum`
 - [ ] [49. Group Anagrams](https://leetcode.com/problems/group-anagrams/) — Medium — `01_arrays_hashing/p0049_group_anagrams`
 - [ ] [347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) — Medium — `01_arrays_hashing/p0347_top_k_frequent_elements`
 - [ ] [271. Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/) — Medium — `01_arrays_hashing/p0271_encode_and_decode_strings`

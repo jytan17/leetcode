@@ -58,6 +58,9 @@ def load():
     return [Problem(m.group(1) == "x", *m.groups()[1:]) for m in LINE.finditer(text)]
 
 
+DONE_FILE = "DONE.md"
+
+
 def set_done(problem, done):
     with open(INDEX) as f:
         text = f.read()
@@ -69,6 +72,14 @@ def set_done(problem, done):
     with open(INDEX, "w") as f:
         f.write(text.replace(old, new, 1))
     problem.done = done
+    done_path = os.path.join(problem.path, DONE_FILE)
+    if done:
+        from datetime import date
+        with open(done_path, "w") as f:
+            f.write(f"# {problem.num}. {problem.title}\n\n"
+                    f"Completed: {date.today()}\n")
+    elif os.path.exists(done_path):
+        os.remove(done_path)
 
 
 def match(problems, query):
@@ -198,7 +209,11 @@ def session(problems, problem):
             if cmd in ("q", "quit", "exit"):
                 return
             elif cmd in ("t", "test", ""):
-                subprocess.run(["uv", "run", "pytest", problem.path, "-v"], cwd=ROOT)
+                result = subprocess.run(
+                    ["uv", "run", "pytest", problem.path, "-v"], cwd=ROOT)
+                if result.returncode == 0 and not problem.done:
+                    set_done(problem, True)
+                    print(f"{GREEN}all tests passed — marked done{OFF}")
             elif cmd in ("o", "open"):
                 print(problem.url)
                 webbrowser.open(problem.url)
