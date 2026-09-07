@@ -13,7 +13,7 @@ Run all: `just nc-all`
 - [x] [49. Group Anagrams](https://leetcode.com/problems/group-anagrams/) — Medium — `01_arrays_hashing/p0049_group_anagrams`
 - [x] [347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) — Medium — `01_arrays_hashing/p0347_top_k_frequent_elements`
 - [x] [271. Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/) — Medium — `01_arrays_hashing/p0271_encode_and_decode_strings`
-- [ ] [238. Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) — Medium — `01_arrays_hashing/p0238_product_of_array_except_self`
+- [x] [238. Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) — Medium — `01_arrays_hashing/p0238_product_of_array_except_self`
 - [ ] [36. Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) — Medium — `01_arrays_hashing/p0036_valid_sudoku`
 - [ ] [128. Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) — Medium — `01_arrays_hashing/p0128_longest_consecutive_sequence`
 
