@@ -7,7 +7,7 @@ Run all: `just nc-all`
 
 ## Arrays & Hashing (9)
 
-- [ ] [217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) — Easy — `01_arrays_hashing/p0217_contains_duplicate`
+- [x] [217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) — Easy — `01_arrays_hashing/p0217_contains_duplicate`
 - [ ] [242. Valid Anagram](https://leetcode.com/problems/valid-anagram/) — Easy — `01_arrays_hashing/p0242_valid_anagram`
 - [x] [1. Two Sum](https://leetcode.com/problems/two-sum/) — Easy — `01_arrays_hashing/p0001_two_sum`
 - [x] [49. Group Anagrams](https://leetcode.com/problems/group-anagrams/) — Medium — `01_arrays_hashing/p0049_group_anagrams`
