@@ -19,7 +19,7 @@ Run all: `just nc-all`
 
 ## Two Pointers (5)
 
-- [ ] [125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) — Easy — `02_two_pointers/p0125_valid_palindrome`
+- [x] [125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) — Easy — `02_two_pointers/p0125_valid_palindrome`
 - [ ] [167. Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) — Medium — `02_two_pointers/p0167_two_sum_ii_input_array_is_sorted`
 - [ ] [15. 3Sum](https://leetcode.com/problems/3sum/) — Medium — `02_two_pointers/p0015_3sum`
 - [ ] [11. Container With Most Water](https://leetcode.com/problems/container-with-most-water/) — Medium — `02_two_pointers/p0011_container_with_most_water`
