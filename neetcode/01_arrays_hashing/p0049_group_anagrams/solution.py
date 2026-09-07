@@ -1,6 +1,12 @@
+from collections import defaultdict
 from typing import List, Optional
 
 
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
-        raise NotImplementedError
+        m = defaultdict(list)
+
+        for s in strs:
+            m["".join(sorted(s))].append(s)
+
+        return list(m.values())
