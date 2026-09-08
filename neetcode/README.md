@@ -31,7 +31,7 @@ Run all: `just nc-all`
 - [x] [3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) — Medium — `03_sliding_window/p0003_longest_substring_without_repeating_characters`
 - [x] [424. Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) — Medium — `03_sliding_window/p0424_longest_repeating_character_replacement`
 - [x] [567. Permutation in String](https://leetcode.com/problems/permutation-in-string/) — Medium — `03_sliding_window/p0567_permutation_in_string`
-- [ ] [76. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) — Hard — `03_sliding_window/p0076_minimum_window_substring`
+- [x] [76. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) — Hard — `03_sliding_window/p0076_minimum_window_substring`
 - [ ] [239. Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/) — Hard — `03_sliding_window/p0239_sliding_window_maximum`
 
 ## Stack (7)
