@@ -18,10 +18,14 @@ def to_list(head):
 
 
 @pytest.mark.parametrize("vals,expected", [
+    # LeetCode examples
     ([1, 2, 3, 4], [1, 4, 2, 3]),
     ([1, 2, 3, 4, 5], [1, 5, 2, 4, 3]),
+    # Edge cases
     ([1], [1]),
     ([1, 2], [1, 2]),
+    ([1, 2, 3], [1, 3, 2]),
+    ([1, 2, 3, 4, 5, 6], [1, 6, 2, 5, 3, 4]),
 ])
 def test_reorder_list(vals, expected):
     head = build_list(vals)

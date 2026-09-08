@@ -16,3 +16,17 @@ def test_kth_largest_empty_start():
     assert k.add(-3) == -3
     assert k.add(-2) == -2
     assert k.add(-4) == -2
+
+
+def test_kth_largest_k_equals_length():
+    k = KthLargest(3, [1, 2, 3])
+    assert k.add(0) == 1
+    assert k.add(4) == 2
+
+
+def test_kth_largest_duplicates():
+    k = KthLargest(2, [0])
+    assert k.add(0) == 0
+    assert k.add(0) == 0
+    assert k.add(1) == 0
+    assert k.add(1) == 1

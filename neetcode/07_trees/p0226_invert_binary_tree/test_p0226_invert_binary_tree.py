@@ -37,18 +37,15 @@ def to_level_list(root):
     return out
 
 
-def find_node(root, val):
-    if root is None:
-        return None
-    if root.val == val:
-        return root
-    return find_node(root.left, val) or find_node(root.right, val)
-
-
 @pytest.mark.parametrize("vals,expected", [
+    # LeetCode examples
     ([4, 2, 7, 1, 3, 6, 9], [4, 7, 2, 9, 6, 3, 1]),
     ([2, 1, 3], [2, 3, 1]),
     ([], []),
+    # Edge cases
+    ([1], [1]),
+    ([1, 2], [1, None, 2]),
+    ([1, None, 2], [1, 2]),
 ])
 def test_invert_tree(vals, expected):
     assert to_level_list(Solution().invertTree(build_tree(vals))) == expected

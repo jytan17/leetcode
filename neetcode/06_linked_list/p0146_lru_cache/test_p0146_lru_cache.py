@@ -31,3 +31,30 @@ def test_lru_cache_capacity_one():
     c.put(2, 2)
     assert c.get(1) == -1
     assert c.get(2) == 2
+
+
+def test_lru_cache_get_refreshes_recency():
+    c = LRUCache(2)
+    c.put(1, 1)
+    c.put(2, 2)
+    assert c.get(1) == 1
+    c.put(3, 3)
+    assert c.get(2) == -1
+    assert c.get(1) == 1
+    assert c.get(3) == 3
+
+
+def test_lru_cache_get_missing_key():
+    c = LRUCache(2)
+    assert c.get(1) == -1
+    c.put(1, 1)
+    assert c.get(2) == -1
+    assert c.get(1) == 1
+
+
+def test_lru_cache_overwrite_same_key():
+    c = LRUCache(2)
+    c.put(1, 1)
+    c.put(1, 2)
+    c.put(1, 3)
+    assert c.get(1) == 3

@@ -22,6 +22,8 @@ def build_tree(vals):
 
 
 def to_level_list(root):
+    if root is None:
+        return []
     out = []
     queue = [root]
     while queue:
@@ -37,21 +39,29 @@ def to_level_list(root):
     return out
 
 
-def find_node(root, val):
-    if root is None:
-        return None
-    if root.val == val:
-        return root
-    return find_node(root.left, val) or find_node(root.right, val)
-
-
 @pytest.mark.parametrize("vals", [
+    # LeetCode examples
     [1, 2, 3, None, None, 4, 5],
     [],
+    # Edge cases
     [1],
     [1, 2, None, 3, None, 4],
+    [1, 2, 3, 4, 5, 6, 7],
+    [-1, -2, -3],
 ])
 def test_codec_roundtrip(vals):
     codec = Codec()
     root = build_tree(vals)
-    assert to_level_list(codec.deserialize(codec.serialize(root))) == to_level_list(root)
+    result = to_level_list(codec.deserialize(codec.serialize(root)))
+    assert result == to_level_list(root)
+
+
+def test_codec_serialize_returns_string():
+    codec = Codec()
+    root = build_tree([1, 2, 3])
+    assert isinstance(codec.serialize(root), str)
+
+
+def test_codec_empty_tree():
+    codec = Codec()
+    assert codec.deserialize(codec.serialize(None)) is None

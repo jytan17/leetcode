@@ -21,3 +21,28 @@ def test_word_dictionary_wildcards_and_length():
     assert d.search("a.") is True
     assert d.search("..") is True
     assert d.search("...") is False
+
+
+def test_word_dictionary_all_dots():
+    d = WordDictionary()
+    d.addWord("abc")
+    assert d.search("...") is True
+    assert d.search("..") is False
+    assert d.search("....") is False
+
+
+def test_word_dictionary_no_match():
+    d = WordDictionary()
+    d.addWord("at")
+    d.addWord("and")
+    d.addWord("an")
+    assert d.search("a") is False
+    assert d.search(".at") is False
+    assert d.search("an.") is True
+    assert d.search("a.d.") is False
+
+
+def test_word_dictionary_empty():
+    d = WordDictionary()
+    assert d.search("a") is False
+    assert d.search(".") is False

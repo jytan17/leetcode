@@ -3,12 +3,22 @@ from solution import Solution
 
 
 @pytest.mark.parametrize("args,expected", [
-    (([[1, 2, 2, 3, 5],
-       [3, 2, 3, 4, 4],
-       [2, 4, 5, 3, 1],
-       [6, 7, 1, 4, 5],
-       [5, 1, 1, 2, 4]],), [[0, 4], [1, 3], [1, 4], [2, 2], [3, 0], [3, 1], [4, 0]]),
-    (([[1]],), [[0, 0]]),
+    # LeetCode examples
+    ([[1, 2, 2, 3, 5],
+      [3, 2, 3, 4, 4],
+      [2, 4, 5, 3, 1],
+      [6, 7, 1, 4, 5],
+      [5, 1, 1, 2, 4]], [[0, 4], [1, 3], [1, 4], [2, 2], [3, 0], [3, 1], [4, 0]]),
+    ([[1]], [[0, 0]]),
+    # Edge cases
+    ([[1, 1], [1, 1]], [[0, 0], [0, 1], [1, 0], [1, 1]]),
+    ([[10, 10, 10],
+      [10, 1, 10],
+      [10, 10, 10]], [[0, 0], [0, 1], [0, 2], [1, 0], [1, 2], [2, 0], [2, 1], [2, 2]]),
+    ([[1, 2, 3],
+      [8, 9, 4],
+      [7, 6, 5]], [[0, 2], [1, 0], [1, 1], [1, 2], [2, 0], [2, 1], [2, 2]]),
 ])
 def test_pacific_atlantic(args, expected):
-    assert sorted(map(tuple, Solution().pacificAtlantic(*args))) == sorted(map(tuple, expected))
+    result = Solution().pacificAtlantic(args)
+    assert sorted(map(tuple, result)) == sorted(map(tuple, expected))

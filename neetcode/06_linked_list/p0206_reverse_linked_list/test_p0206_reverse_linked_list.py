@@ -18,9 +18,14 @@ def to_list(head):
 
 
 @pytest.mark.parametrize("vals,expected", [
+    # LeetCode examples
     ([1, 2, 3, 4, 5], [5, 4, 3, 2, 1]),
     ([1, 2], [2, 1]),
     ([], []),
+    # Edge cases
+    ([1], [1]),
+    ([1, 2, 3], [3, 2, 1]),
+    ([7, 7, 7], [7, 7, 7]),
 ])
 def test_reverse_list(vals, expected):
     assert to_list(Solution().reverseList(build_list(vals))) == expected

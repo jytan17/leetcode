@@ -6,17 +6,23 @@
 
 ## Statement
 
-<paste problem statement>
+Given `n` pairs of parentheses, write a function to generate all combinations of well-formed parentheses.
+
+## Examples
+
+```
+Input: n = 3
+Output: ["((()))","(()())","(())()","()(())","()()()"]
+
+Input: n = 1
+Output: ["()"]
+```
 
 ## Constraints
 
-- ...
+- `1 <= n <= 8`
 
 ## Target
 
-- Time: O(?)
-- Space: O(?)
-
-## Notes
-
-<approach hints, gotchas>
+- Time: O(4^n / sqrt(n)) — nth Catalan number
+- Space: O(n) — recursion depth

@@ -9,14 +9,6 @@ def build_list(vals):
     return head
 
 
-def to_list(head):
-    out = []
-    while head:
-        out.append(head.val)
-        head = head.next
-    return out
-
-
 def build_cycle(vals, pos):
     head = build_list(vals)
     if head is None:
@@ -32,11 +24,16 @@ def build_cycle(vals, pos):
 
 
 @pytest.mark.parametrize("vals,pos,expected", [
+    # LeetCode examples
     ([3, 2, 0, -4], 1, True),
     ([1, 2], 0, True),
     ([1], -1, False),
+    # Edge cases
     ([], -1, False),
     ([1, 2, 3], -1, False),
+    ([1, 2, 3, 4], 3, True),
+    ([1], 0, True),
+    ([1, 2, 3, 4, 5], 2, True),
 ])
 def test_has_cycle(vals, pos, expected):
     assert Solution().hasCycle(build_cycle(vals, pos)) == expected

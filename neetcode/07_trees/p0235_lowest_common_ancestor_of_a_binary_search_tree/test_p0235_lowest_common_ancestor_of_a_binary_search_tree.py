@@ -21,22 +21,6 @@ def build_tree(vals):
     return root
 
 
-def to_level_list(root):
-    out = []
-    queue = [root]
-    while queue:
-        node = queue.pop(0)
-        if node is None:
-            out.append(None)
-            continue
-        out.append(node.val)
-        queue.append(node.left)
-        queue.append(node.right)
-    while out and out[-1] is None:
-        out.pop()
-    return out
-
-
 def find_node(root, val):
     if root is None:
         return None
@@ -46,9 +30,14 @@ def find_node(root, val):
 
 
 @pytest.mark.parametrize("vals,p,q,expected", [
+    # LeetCode examples
     ([6, 2, 8, 0, 4, 7, 9, None, None, 3, 5], 2, 8, 6),
     ([6, 2, 8, 0, 4, 7, 9, None, None, 3, 5], 2, 4, 2),
     ([2, 1], 2, 1, 2),
+    # Edge cases
+    ([6, 2, 8, 0, 4, 7, 9, None, None, 3, 5], 3, 5, 4),
+    ([6, 2, 8, 0, 4, 7, 9, None, None, 3, 5], 0, 5, 2),
+    ([6, 2, 8, 0, 4, 7, 9, None, None, 3, 5], 7, 9, 8),
 ])
 def test_lowest_common_ancestor(vals, p, q, expected):
     root = build_tree(vals)

@@ -21,34 +21,15 @@ def build_tree(vals):
     return root
 
 
-def to_level_list(root):
-    out = []
-    queue = [root]
-    while queue:
-        node = queue.pop(0)
-        if node is None:
-            out.append(None)
-            continue
-        out.append(node.val)
-        queue.append(node.left)
-        queue.append(node.right)
-    while out and out[-1] is None:
-        out.pop()
-    return out
-
-
-def find_node(root, val):
-    if root is None:
-        return None
-    if root.val == val:
-        return root
-    return find_node(root.left, val) or find_node(root.right, val)
-
-
 @pytest.mark.parametrize("vals,expected", [
+    # LeetCode examples
     ([3, 9, 20, None, None, 15, 7], True),
     ([1, 2, 2, 3, 3, None, None, 4, 4], False),
     ([], True),
+    # Edge cases
+    ([1], True),
+    ([1, 2, 3, 4, 5, 6, 7], True),
+    ([1, 2, None, 3, None, 4], False),
 ])
 def test_is_balanced(vals, expected):
     assert Solution().isBalanced(build_tree(vals)) == expected

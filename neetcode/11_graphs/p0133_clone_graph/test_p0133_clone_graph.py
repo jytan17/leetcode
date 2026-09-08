@@ -3,10 +3,12 @@ from solution import Solution, Node
 
 
 def build(adj):
+    if not adj:
+        return None
     nodes = [Node(i + 1) for i in range(len(adj))]
     for i, neighbors in enumerate(adj):
         nodes[i].neighbors = [nodes[j - 1] for j in neighbors]
-    return nodes[0] if nodes else None
+    return nodes[0]
 
 
 def dump(node):
@@ -38,12 +40,20 @@ def collect_ids(node):
 
 
 @pytest.mark.parametrize("adj", [
+    # LeetCode examples
     [[2, 4], [1, 3], [2, 4], [1, 3]],
     [[]],
     [],
+    # Edge cases
+    [[2], [1]],
+    [[2, 3], [1, 3], [1, 2]],
 ])
 def test_clone_graph(adj):
     original = build(adj)
     copied = Solution().cloneGraph(original)
     assert dump(copied) == dump(original)
     assert collect_ids(copied).isdisjoint(collect_ids(original))
+
+
+def test_clone_none():
+    assert Solution().cloneGraph(None) is None

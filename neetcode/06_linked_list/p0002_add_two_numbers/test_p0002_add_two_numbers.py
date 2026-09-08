@@ -18,10 +18,15 @@ def to_list(head):
 
 
 @pytest.mark.parametrize("a,b,expected", [
+    # LeetCode examples
     ([2, 4, 3], [5, 6, 4], [7, 0, 8]),
     ([0], [0], [0]),
     ([9, 9, 9, 9, 9, 9, 9], [9, 9, 9, 9], [8, 9, 9, 9, 0, 0, 0, 1]),
+    # Edge cases
     ([5], [5], [0, 1]),
+    ([1], [9, 9, 9], [0, 0, 0, 1]),
+    ([0], [1, 2, 3], [1, 2, 3]),
+    ([9], [1], [0, 1]),
 ])
 def test_add_two_numbers(a, b, expected):
     assert to_list(Solution().addTwoNumbers(build_list(a), build_list(b))) == expected

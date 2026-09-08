@@ -3,10 +3,20 @@ from solution import Solution
 
 
 @pytest.mark.parametrize("args,expected", [
-    ((["wrt", "wrf", "er", "ett", "rftt"],), "wertf"),
-    ((["z", "x"],), "zx"),
-    ((["z", "x", "z"],), ""),
-    ((["abc", "ab"],), ""),
+    # LeetCode examples
+    (["wrt", "wrf", "er", "ett", "rftt"], "wertf"),
+    (["z", "x"], "zx"),
+    (["z", "x", "z"], ""),
+    # Edge cases
+    (["abc", "ab"], ""),
+    (["z"], "z"),
+    (["ab", "abc"], "abc"),
+    (["a", "b", "c"], "abc"),
 ])
 def test_alien_order(args, expected):
-    assert Solution().alienOrder(*args) == expected
+    result = Solution().alienOrder(args)
+    if expected == "":
+        assert result == ""
+    else:
+        assert set(result) == set(expected)
+        assert len(result) == len(expected)

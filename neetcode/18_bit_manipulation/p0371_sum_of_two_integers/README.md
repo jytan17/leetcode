@@ -6,17 +6,23 @@
 
 ## Statement
 
-<paste problem statement>
+Given two integers `a` and `b`, return the sum of the two integers without using the operators `+` and `-`.
+
+## Examples
+
+```
+Input: a = 1, b = 2
+Output: 3
+
+Input: a = 2, b = 3
+Output: 5
+```
 
 ## Constraints
 
-- ...
+- `-1000 <= a, b <= 1000`
 
 ## Target
 
-- Time: O(?)
-- Space: O(?)
-
-## Notes
-
-<approach hints, gotchas>
+- Time: O(1)
+- Space: O(1)

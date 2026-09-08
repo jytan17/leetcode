@@ -21,34 +21,15 @@ def build_tree(vals):
     return root
 
 
-def to_level_list(root):
-    out = []
-    queue = [root]
-    while queue:
-        node = queue.pop(0)
-        if node is None:
-            out.append(None)
-            continue
-        out.append(node.val)
-        queue.append(node.left)
-        queue.append(node.right)
-    while out and out[-1] is None:
-        out.pop()
-    return out
-
-
-def find_node(root, val):
-    if root is None:
-        return None
-    if root.val == val:
-        return root
-    return find_node(root.left, val) or find_node(root.right, val)
-
-
 @pytest.mark.parametrize("vals,k,expected", [
+    # LeetCode examples
     ([3, 1, 4, None, 2], 1, 1),
     ([5, 3, 6, 2, 4, None, None, 1], 3, 3),
+    # Edge cases
     ([1], 1, 1),
+    ([3, 1, 4, None, 2], 4, 4),
+    ([5, 3, 6, 2, 4, None, None, 1], 1, 1),
+    ([5, 3, 6, 2, 4, None, None, 1], 6, 6),
 ])
 def test_kth_smallest(vals, k, expected):
     assert Solution().kthSmallest(build_tree(vals), k) == expected
