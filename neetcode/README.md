@@ -41,7 +41,7 @@ Run all: `just nc-all`
 - [x] [150. Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/) — Medium — `04_stack/p0150_evaluate_reverse_polish_notation`
 - [x] [22. Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) — Medium — `04_stack/p0022_generate_parentheses`
 - [x] [739. Daily Temperatures](https://leetcode.com/problems/daily-temperatures/) — Medium — `04_stack/p0739_daily_temperatures`
-- [ ] [853. Car Fleet](https://leetcode.com/problems/car-fleet/) — Medium — `04_stack/p0853_car_fleet`
+- [x] [853. Car Fleet](https://leetcode.com/problems/car-fleet/) — Medium — `04_stack/p0853_car_fleet`
 - [ ] [84. Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/) — Hard — `04_stack/p0084_largest_rectangle_in_histogram`
 
 ## Binary Search (7)
