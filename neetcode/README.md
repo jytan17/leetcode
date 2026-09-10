@@ -38,7 +38,7 @@ Run all: `just nc-all`
 
 - [x] [20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) — Easy — `04_stack/p0020_valid_parentheses`
 - [ ] [155. Min Stack](https://leetcode.com/problems/min-stack/) — Medium — `04_stack/p0155_min_stack`
-- [ ] [150. Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/) — Medium — `04_stack/p0150_evaluate_reverse_polish_notation`
+- [x] [150. Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/) — Medium — `04_stack/p0150_evaluate_reverse_polish_notation`
 - [ ] [22. Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) — Medium — `04_stack/p0022_generate_parentheses`
 - [ ] [739. Daily Temperatures](https://leetcode.com/problems/daily-temperatures/) — Medium — `04_stack/p0739_daily_temperatures`
 - [ ] [853. Car Fleet](https://leetcode.com/problems/car-fleet/) — Medium — `04_stack/p0853_car_fleet`
