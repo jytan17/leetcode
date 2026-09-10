@@ -3,16 +3,21 @@ from typing import List, Optional
 
 class MinStack:
     def __init__(self):
-        raise NotImplementedError
+        self.array = []
 
     def push(self, val: int) -> None:
-        raise NotImplementedError
+        if self.array:
+            _, cur_min = self.array[-1]
+        else:
+            cur_min = val
+
+        self.array.append((val, min(val, cur_min)))
 
     def pop(self) -> None:
-        raise NotImplementedError
+        self.array.pop()
 
     def top(self) -> int:
-        raise NotImplementedError
+        return self.array[-1][0]
 
     def getMin(self) -> int:
-        raise NotImplementedError
+        return self.array[-1][1]
