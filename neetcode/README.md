@@ -58,11 +58,11 @@ Run all: `just nc-all`
 
 - [x] [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) — Easy — `06_linked_list/p0206_reverse_linked_list`
 - [x] [21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) — Easy — `06_linked_list/p0021_merge_two_sorted_lists`
-- [ ] [143. Reorder List](https://leetcode.com/problems/reorder-list/) — Medium — `06_linked_list/p0143_reorder_list`
+- [x] [143. Reorder List](https://leetcode.com/problems/reorder-list/) — Medium — `06_linked_list/p0143_reorder_list`
 - [ ] [19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) — Medium — `06_linked_list/p0019_remove_nth_node_from_end_of_list`
 - [ ] [138. Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/) — Medium — `06_linked_list/p0138_copy_list_with_random_pointer`
 - [ ] [2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) — Medium — `06_linked_list/p0002_add_two_numbers`
-- [ ] [141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) — Easy — `06_linked_list/p0141_linked_list_cycle`
+- [x] [141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) — Easy — `06_linked_list/p0141_linked_list_cycle`
 - [ ] [287. Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) — Medium — `06_linked_list/p0287_find_the_duplicate_number`
 - [ ] [146. LRU Cache](https://leetcode.com/problems/lru-cache/) — Medium — `06_linked_list/p0146_lru_cache`
 - [ ] [23. Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) — Hard — `06_linked_list/p0023_merge_k_sorted_lists`
