@@ -59,7 +59,7 @@ Run all: `just nc-all`
 - [x] [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) — Easy — `06_linked_list/p0206_reverse_linked_list`
 - [x] [21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) — Easy — `06_linked_list/p0021_merge_two_sorted_lists`
 - [x] [143. Reorder List](https://leetcode.com/problems/reorder-list/) — Medium — `06_linked_list/p0143_reorder_list`
-- [ ] [19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) — Medium — `06_linked_list/p0019_remove_nth_node_from_end_of_list`
+- [x] [19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) — Medium — `06_linked_list/p0019_remove_nth_node_from_end_of_list`
 - [ ] [138. Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/) — Medium — `06_linked_list/p0138_copy_list_with_random_pointer`
 - [ ] [2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) — Medium — `06_linked_list/p0002_add_two_numbers`
 - [x] [141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) — Easy — `06_linked_list/p0141_linked_list_cycle`
