@@ -56,7 +56,7 @@ Run all: `just nc-all`
 
 ## Linked List (11)
 
-- [ ] [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) — Easy — `06_linked_list/p0206_reverse_linked_list`
+- [x] [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) — Easy — `06_linked_list/p0206_reverse_linked_list`
 - [ ] [21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) — Easy — `06_linked_list/p0021_merge_two_sorted_lists`
 - [ ] [143. Reorder List](https://leetcode.com/problems/reorder-list/) — Medium — `06_linked_list/p0143_reorder_list`
 - [ ] [19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) — Medium — `06_linked_list/p0019_remove_nth_node_from_end_of_list`
