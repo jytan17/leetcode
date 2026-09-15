@@ -64,7 +64,7 @@ Run all: `just nc-all`
 - [x] [2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) — Medium — `06_linked_list/p0002_add_two_numbers`
 - [x] [141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) — Easy — `06_linked_list/p0141_linked_list_cycle`
 - [ ] [287. Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) — Medium — `06_linked_list/p0287_find_the_duplicate_number`
-- [ ] [146. LRU Cache](https://leetcode.com/problems/lru-cache/) — Medium — `06_linked_list/p0146_lru_cache`
+- [x] [146. LRU Cache](https://leetcode.com/problems/lru-cache/) — Medium — `06_linked_list/p0146_lru_cache`
 - [ ] [23. Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) — Hard — `06_linked_list/p0023_merge_k_sorted_lists`
 - [ ] [25. Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/) — Hard — `06_linked_list/p0025_reverse_nodes_in_k_group`
 
