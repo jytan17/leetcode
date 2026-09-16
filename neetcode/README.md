@@ -48,7 +48,7 @@ Run all: `just nc-all`
 
 - [x] [704. Binary Search](https://leetcode.com/problems/binary-search/) — Easy — `05_binary_search/p0704_binary_search`
 - [x] [74. Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/) — Medium — `05_binary_search/p0074_search_a_2d_matrix`
-- [ ] [875. Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/) — Medium — `05_binary_search/p0875_koko_eating_bananas`
+- [x] [875. Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/) — Medium — `05_binary_search/p0875_koko_eating_bananas`
 - [ ] [153. Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) — Medium — `05_binary_search/p0153_find_minimum_in_rotated_sorted_array`
 - [ ] [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) — Medium — `05_binary_search/p0033_search_in_rotated_sorted_array`
 - [ ] [981. Time Based Key-Value Store](https://leetcode.com/problems/time-based-key-value-store/) — Medium — `05_binary_search/p0981_time_based_key_value_store`
