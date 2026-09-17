@@ -74,7 +74,7 @@ Run all: `just nc-all`
 - [x] [104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) — Easy — `07_trees/p0104_maximum_depth_of_binary_tree`
 - [x] [543. Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/) — Easy — `07_trees/p0543_diameter_of_binary_tree`
 - [x] [110. Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/) — Easy — `07_trees/p0110_balanced_binary_tree`
-- [ ] [100. Same Tree](https://leetcode.com/problems/same-tree/) — Easy — `07_trees/p0100_same_tree`
+- [x] [100. Same Tree](https://leetcode.com/problems/same-tree/) — Easy — `07_trees/p0100_same_tree`
 - [ ] [572. Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/) — Easy — `07_trees/p0572_subtree_of_another_tree`
 - [ ] [235. Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) — Medium — `07_trees/p0235_lowest_common_ancestor_of_a_binary_search_tree`
 - [ ] [102. Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) — Medium — `07_trees/p0102_binary_tree_level_order_traversal`
