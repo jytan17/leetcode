@@ -80,7 +80,7 @@ Run all: `just nc-all`
 - [x] [102. Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) — Medium — `07_trees/p0102_binary_tree_level_order_traversal`
 - [x] [199. Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/) — Medium — `07_trees/p0199_binary_tree_right_side_view`
 - [x] [1448. Count Good Nodes in Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree/) — Medium — `07_trees/p1448_count_good_nodes_in_binary_tree`
-- [ ] [98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) — Medium — `07_trees/p0098_validate_binary_search_tree`
+- [x] [98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) — Medium — `07_trees/p0098_validate_binary_search_tree`
 - [ ] [230. Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) — Medium — `07_trees/p0230_kth_smallest_element_in_a_bst`
 - [ ] [105. Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) — Medium — `07_trees/p0105_construct_binary_tree_from_preorder_and_inorder_traversal`
 - [ ] [124. Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/) — Hard — `07_trees/p0124_binary_tree_maximum_path_sum`
