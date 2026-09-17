@@ -9,5 +9,18 @@ class TreeNode:
 
 
 class Solution:
-    def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
-        raise NotImplementedError
+    def lowestCommonAncestor(
+        self, root: "TreeNode", p: "TreeNode", q: "TreeNode"
+    ) -> "TreeNode":
+        def dfs(node, a, b):
+            if a.val <= node.val <= b.val:
+                return node
+            elif b.val < node.val:
+                return dfs(node.left, a, b)
+            else:
+                return dfs(node.right, a, b)
+
+        if p.val > q.val:
+            p, q = q, p
+
+        return dfs(root, p, q)

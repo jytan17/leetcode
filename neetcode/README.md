@@ -76,7 +76,7 @@ Run all: `just nc-all`
 - [x] [110. Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/) — Easy — `07_trees/p0110_balanced_binary_tree`
 - [x] [100. Same Tree](https://leetcode.com/problems/same-tree/) — Easy — `07_trees/p0100_same_tree`
 - [x] [572. Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/) — Easy — `07_trees/p0572_subtree_of_another_tree`
-- [ ] [235. Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) — Medium — `07_trees/p0235_lowest_common_ancestor_of_a_binary_search_tree`
+- [x] [235. Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) — Medium — `07_trees/p0235_lowest_common_ancestor_of_a_binary_search_tree`
 - [ ] [102. Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) — Medium — `07_trees/p0102_binary_tree_level_order_traversal`
 - [ ] [199. Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/) — Medium — `07_trees/p0199_binary_tree_right_side_view`
 - [ ] [1448. Count Good Nodes in Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree/) — Medium — `07_trees/p1448_count_good_nodes_in_binary_tree`
