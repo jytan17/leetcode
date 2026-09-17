@@ -1,3 +1,4 @@
+from collections import deque
 from typing import List, Optional
 
 
@@ -10,4 +11,18 @@ class TreeNode:
 
 class Solution:
     def rightSideView(self, root: Optional[TreeNode]) -> List[int]:
-        raise NotImplementedError
+        ans = []
+
+        level = deque([root]) if root else []
+        while level:
+            cur_level_len = len(level)
+            for i in range(cur_level_len):
+                node = level.popleft()
+                if node.left:
+                    level.append(node.left)
+                if node.right:
+                    level.append(node.right)
+                if i == cur_level_len - 1:
+                    ans.append(node.val)
+
+        return ans
