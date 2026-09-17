@@ -10,4 +10,16 @@ class TreeNode:
 
 class Solution:
     def isBalanced(self, root: Optional[TreeNode]) -> bool:
-        raise NotImplementedError
+        self.ans = True
+
+        def helper(node):
+            if not node:
+                return 0
+
+            left, right = helper(node.left), helper(node.right)
+            if abs(left - right) > 1:
+                self.ans = False
+            return 1 + max(left, right)
+
+        helper(root)
+        return self.ans
