@@ -51,7 +51,7 @@ Run all: `just nc-all`
 - [x] [875. Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/) — Medium — `05_binary_search/p0875_koko_eating_bananas`
 - [x] [153. Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) — Medium — `05_binary_search/p0153_find_minimum_in_rotated_sorted_array`
 - [x] [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) — Medium — `05_binary_search/p0033_search_in_rotated_sorted_array`
-- [ ] [981. Time Based Key-Value Store](https://leetcode.com/problems/time-based-key-value-store/) — Medium — `05_binary_search/p0981_time_based_key_value_store`
+- [x] [981. Time Based Key-Value Store](https://leetcode.com/problems/time-based-key-value-store/) — Medium — `05_binary_search/p0981_time_based_key_value_store`
 - [ ] [4. Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/) — Hard — `05_binary_search/p0004_median_of_two_sorted_arrays`
 
 ## Linked List (11)
