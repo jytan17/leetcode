@@ -106,7 +106,7 @@ Run all: `just nc-all`
 
 - [x] [78. Subsets](https://leetcode.com/problems/subsets/) — Medium — `10_backtracking/p0078_subsets`
 - [x] [39. Combination Sum](https://leetcode.com/problems/combination-sum/) — Medium — `10_backtracking/p0039_combination_sum`
-- [ ] [46. Permutations](https://leetcode.com/problems/permutations/) — Medium — `10_backtracking/p0046_permutations`
+- [x] [46. Permutations](https://leetcode.com/problems/permutations/) — Medium — `10_backtracking/p0046_permutations`
 - [ ] [90. Subsets II](https://leetcode.com/problems/subsets-ii/) — Medium — `10_backtracking/p0090_subsets_ii`
 - [ ] [40. Combination Sum II](https://leetcode.com/problems/combination-sum-ii/) — Medium — `10_backtracking/p0040_combination_sum_ii`
 - [ ] [79. Word Search](https://leetcode.com/problems/word-search/) — Medium — `10_backtracking/p0079_word_search`
