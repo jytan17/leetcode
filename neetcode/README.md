@@ -89,7 +89,7 @@ Run all: `just nc-all`
 ## Tries (3)
 
 - [x] [208. Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/) — Medium — `08_tries/p0208_implement_trie_prefix_tree`
-- [ ] [211. Design Add and Search Words Data Structure](https://leetcode.com/problems/design-add-and-search-words-data-structure/) — Medium — `08_tries/p0211_design_add_and_search_words_data_structure`
+- [x] [211. Design Add and Search Words Data Structure](https://leetcode.com/problems/design-add-and-search-words-data-structure/) — Medium — `08_tries/p0211_design_add_and_search_words_data_structure`
 - [ ] [212. Word Search II](https://leetcode.com/problems/word-search-ii/) — Hard — `08_tries/p0212_word_search_ii`
 
 ## Heap / Priority Queue (7)
